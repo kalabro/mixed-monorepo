@@ -1,0 +1,8 @@
+{
+  "name": "@kalabro/mixed-monorepo-js",
+  "version": "0.1.0",
+  "description": "JS subpackage from mixed-monorepo.",
+  "main": "index.js",
+  "author": "kalabro",
+  "license": "MIT"
+}

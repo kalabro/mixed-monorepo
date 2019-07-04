@@ -1,0 +1,14 @@
+{
+    "name": "kalabro/mixed-monorepo-php",
+    "description": "PHP subpackage from mixed-monorepo.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kate",
+            "email": "kalabro@ya.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
