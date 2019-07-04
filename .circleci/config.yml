@@ -1,0 +1,25 @@
+version: 2.1
+
+jobs:
+  split_and_push:
+    working_directory: ~/mixed-monorepo
+    docker:
+      - image: buildpack-deps:trusty
+    steps:
+      - add_ssh_keys
+      - checkout
+      - run:
+          name: Split monorepo into child repositories for releasing.
+          command: ./bin/split.sh
+
+
+workflows:
+  version: 2
+
+  release:
+    jobs:
+      - split_and_push:
+          filters:
+            branches:
+              only:
+                - master
