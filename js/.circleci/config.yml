@@ -13,7 +13,7 @@ jobs:
           command: git fetch --tags --force
       - run:
           name: List tags.
-          run: git tag --list
+          command: git tag --list
       - run:
           name: Install app
           command: yarn install
