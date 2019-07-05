@@ -9,17 +9,8 @@ jobs:
       - add_ssh_keys
       - checkout
       - run:
-          name: Pull all tags.
-          command: git fetch --tags --force
-      - run:
-          name: List tags.
-          command: git tag --list
-      - run:
-          name: Install app
-          command: yarn install
-      - run:
           name: Run semantic release
-          command: yarn run semantic-release
+          command: npx semantic-release
 
 
 workflows:

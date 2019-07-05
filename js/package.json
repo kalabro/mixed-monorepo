@@ -6,9 +6,6 @@
   "author": "kalabro",
   "license": "MIT",
   "repository": "https://github.com/kalabro/mixed-monorepo-js",
-  "scripts": {
-    "semantic-release": "semantic-release"
-  },
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
@@ -18,9 +15,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "devDependencies": {
-    "@semantic-release/git": "^7.0.16",
-    "semantic-release": "^15.13.18"
   }
 }
