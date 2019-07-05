@@ -1,3 +1,3 @@
 exports.example = function () {
-  return "HELLO WORLD";
+  return "Breaking change!";
 };
