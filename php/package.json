@@ -1,23 +1,18 @@
 {
-  "name": "@kalabro/mixed-monorepo-js",
+  "name": "@kalabro/mixed-monorepo-php",
   "version": "0.0.0-semantic-release",
-  "description": "JS subpackage from mixed-monorepo.",
-  "main": "index.js",
+  "description": "PHP subpackage from mixed-monorepo.",
   "author": "kalabro",
   "license": "MIT",
-  "repository": "https://github.com/kalabro/mixed-monorepo-js",
+  "repository": "https://github.com/kalabro/mixed-monorepo-php",
   "scripts": {
     "semantic-release": "semantic-release"
   },
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/npm"
+      "@semantic-release/release-notes-generator"
     ]
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "devDependencies": {
     "@semantic-release/git": "^7.0.16",
