@@ -5,17 +5,10 @@
   "author": "kalabro",
   "license": "MIT",
   "repository": "https://github.com/kalabro/mixed-monorepo-php",
-  "scripts": {
-    "semantic-release": "semantic-release"
-  },
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator"
     ]
-  },
-  "devDependencies": {
-    "@semantic-release/git": "^7.0.16",
-    "semantic-release": "^15.13.18"
   }
 }
