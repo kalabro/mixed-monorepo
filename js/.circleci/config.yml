@@ -1,13 +1,19 @@
 version: 2.1
 
 jobs:
-  split_and_push:
+  release:
     working_directory: ~/mixed-monorepo-js
     docker:
       - image: circleci/node:10
     steps:
       - add_ssh_keys
       - checkout
+      - run:
+          name: Pull all tags.
+          command: git fetch --tags --force
+      - run:
+          name: List tags.
+          run: git tag --list
       - run:
           name: Install app
           command: yarn install
@@ -21,7 +27,7 @@ workflows:
 
   release:
     jobs:
-      - split_and_push:
+      - release:
           filters:
             branches:
               only:

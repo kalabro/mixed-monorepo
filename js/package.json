@@ -1,6 +1,6 @@
 {
   "name": "@kalabro/mixed-monorepo-js",
-  "version": "0.0.0",
+  "version": "0.0.0-semantic-release",
   "description": "JS subpackage from mixed-monorepo.",
   "main": "index.js",
   "author": "kalabro",
