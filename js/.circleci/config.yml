@@ -9,6 +9,9 @@ jobs:
       - add_ssh_keys
       - checkout
       - run:
+          name: Install Slack bot for semantic-release.
+          command: npm i -g semantic-release-slack-bot
+      - run:
           name: Run semantic release
           command: npx semantic-release
 
