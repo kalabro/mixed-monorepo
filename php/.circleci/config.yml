@@ -2,15 +2,17 @@ version: 2.1
 
 jobs:
   release:
-    working_directory: ~/mixed-monorepo-php
     docker:
       - image: circleci/node:10
     steps:
       - add_ssh_keys
       - checkout
       - run:
-          name: Run semantic release
-          command: npx semantic-release
+          name: Install dependencies.
+          command: yarn install
+      - run:
+          name: Run semantic release.
+          command: yarn run semantic-release
 
 
 workflows:
