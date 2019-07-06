@@ -2,18 +2,17 @@ version: 2.1
 
 jobs:
   release:
-    working_directory: ~/mixed-monorepo-js
     docker:
       - image: circleci/node:10
     steps:
       - add_ssh_keys
       - checkout
       - run:
-          name: Install Slack bot for semantic-release.
-          command: sudo npm i -g semantic-release semantic-release-slack-bot
+          name: Install dependencies.
+          command: yarn install
       - run:
-          name: Run semantic release
-          command: npx semantic-release
+          name: Run semantic release.
+          command: yarn run semantic-release
 
 
 workflows:

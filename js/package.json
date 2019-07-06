@@ -22,5 +22,12 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.13.18",
+    "semantic-release-slack-bot": "^1.1.2"
   }
 }
